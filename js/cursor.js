@@ -335,7 +335,21 @@ window.addEventListener("load", function() {
     //note that everything must be passed as an array, so the brakets ['...'] are important.
 
     // Apply to the main document
-    animateCursor(['snoopy-frame1.png', 'snoopy-frame2.png']);
+    var myCustomCursorFrames = [
+        'kiroitori_sparkle_01.png',
+        'kiroitori_sparkle_02.png',
+        'kiroitori_sparkle_03.png',
+        'kiroitori_sparkle_04.png',
+        'kiroitori_sparkle_05.png',
+        'kiroitori_sparkle_06.png',
+        'kiroitori_sparkle_07.png',
+        'kiroitori_sparkle_08.png',
+        'kiroitori_sparkle_09.png',
+        'kiroitori_sparkle_10.png',
+        'kiroitori_sparkle_11.png',
+        'kiroitori_sparkle_12.png'
+    ]
+    animateCursor(myCustomCursorFrames);
 
     // Example: Apply a static cursor to a specific iframe (replace 'myIframeId' with your iframe's ID)
     // const mySpecificIframe = document.getElementById('myIframeId');
@@ -344,7 +358,7 @@ window.addEventListener("load", function() {
     // }
 
     // Example: Animate cursors for all same-origin iframes
-    animateCursorForIframe(['snoopy-frame1.png', 'snoopy-frame2.png']);
+    animateCursorForIframe(myCustomCursorFrames);
 
     // Example: Animate cursors for 'li' tags within all same-origin iframes
     // animateCursorForElementInIframe(['Custom/sparkle/CursorStarSparkle-frame1.png', 'Custom/sparkle/CursorStarSparkle-frame2.png', 'Custom/sparkle/CursorStarSparkle-frame3.png', 'Custom/sparkle/CursorStarSparkle-frame4.png', 'Custom/sparkle/CursorStarSparkle-frame5.png', 'Custom/sparkle/CursorStarSparkle-frame6.png', 'Custom/sparkle/CursorStarSparkle-frame7.png', 'Custom/sparkle/CursorStarSparkle-frame8.png', 'Custom/sparkle/CursorStarSparkle-frame9.png', 'Custom/sparkle/CursorStarSparkle-frame10.png', 'Custom/sparkle/CursorStarSparkle-frame11.png', 'Custom/sparkle/CursorStarSparkle-frame12.png', 'Custom/sparkle/CursorStarSparkle-frame13.png', 'Custom/sparkle/CursorStarSparkle-frame14.png', 'Custom/sparkle/CursorStarSparkle-frame15.png', 'Custom/sparkle/CursorStarSparkle-frame16.png', 'Custom/sparkle/CursorStarSparkle-frame17.png', 'Custom/sparkle/CursorStarSparkle-frame18.png', 'Custom/sparkle/CursorStarSparkle-frame19.png', 'Custom/sparkle/CursorStarSparkle-frame20.png'], "li");
